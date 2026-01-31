@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gabriel Terraza's journey from marketing entrepreneur to digital strategist and sales expert. Learn about growth hacking, SEO optimization, and high-ticket sales through real-world experiences.">
+    <meta name="keywords" content="digital marketing, SEO specialist, appointment setter, sales closer, Guatemala marketing expert, growth hacking, GoHighLevel, Meta Ads, Google Ads">
+    <meta name="author" content="Gabriel Terraza">
+    <meta property="og:title" content="From Startup Dreams to Sales Mastery: A Digital Marketing Journey">
+    <meta property="og:description" content="How I transformed challenges into opportunities across marketing and sales">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabrielterraza.com/blog">
+
+    <title>From Startup Dreams to Sales Mastery | Gabriel Terraza's Digital Journey</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Questrial&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-dark: #1a1a1a;
+            --primary-light: #f8f6f3;
+            --accent-gold: #c9a961;
+            --accent-deep: #2d4a3e;
+            --text-primary: #2c2c2c;
+            --text-secondary: #6b6b6b;
+            --border-subtle: #e5e2dd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Questrial', sans-serif;
+            color: var(--text-primary);
+            background: var(--primary-light);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Crimson Pro', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(248, 246, 243, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 1.5rem 0;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        nav .contact {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        nav .contact:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 6rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--accent-deep) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            animation: fadeInUp 1s ease-out 0.6s backwards;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        article {
+            background: white;
+            margin: -3rem auto 4rem;
+            padding: 4rem 4rem 3rem;
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            position: relative;
+            animation: fadeIn 1s ease-out 0.8s backwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 3rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 2rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin: 3rem 0 1.5rem;
+            color: var(--primary-dark);
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-gold);
+            margin-top: 0.8rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--accent-deep);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f6f3 0%, #ede9e3 100%);
+            border-left: 4px solid var(--accent-deep);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-deep);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-gold);
+        }
+
+        .skill-card h4 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        .stat {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 0 0.3rem;
+        }
+
+        .pullquote {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            color: var(--accent-deep);
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .pullquote::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-gold);
+            opacity: 0.3;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--accent-deep);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section h2::after {
+            background: var(--accent-gold);
+            margin: 0.8rem auto 0;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #b89850;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 169, 97, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            article {
+                padding: 2rem 1.5rem;
+                margin: -2rem 1rem 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Gabriel Terraza</a>
+            <a href="mailto:carlosgabrielterraza@gmail.com" class="contact">Get in Touch</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>From Startup Dreams to Sales Mastery</h1>
+            <p class="subtitle">How I transformed challenges into opportunities across marketing and sales</p>
+            <div class="hero-meta">
+                <span>📍 Guatemala City, Guatemala</span>
+                <span>📅 January 2026</span>
+                <span>⏱️ 8 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <article>
+            <p class="intro">
+                There are countless blogs on the internet competing for your attention. What makes this one different? It's not just a resume—it's the story of how failure, persistence, and curiosity shaped my journey from co-founding a marketing agency to mastering high-ticket sales and digital strategy.
+            </p>
+
+            <h2>Chapter 1: The Entrepreneurial Spark</h2>
+
+            <p>In 2018, fresh out of Universidad Rafael Landivar with a marketing degree, I did what many young entrepreneurs do: I jumped into the deep end. My co-founder and I launched <strong>Mint gt</strong>, a marketing agency in Guatemala City with nothing but ambition and a laptop.</p>
+
+            <p>The early days were humbling. We hustled to sign our first client, then our second. By the time we closed shop in 2020, we'd built a portfolio of <span class="stat">15 diverse clients</span>, ranging from healthcare providers to local businesses seeking to break into digital.</p>
+
+            <div class="highlight-box">
+                <h4>The Healthcare Breakthrough</h4>
+                <p>One campaign still stands out. A healthcare client came to us with minimal social presence—around 1,100 followers and sporadic appointment bookings. We crafted a multi-channel growth strategy using Facebook and Google Ads, combined with engaging content that spoke directly to their audience's pain points.</p>
+                <p>The results? A <span class="stat">300% surge in followers</span> (1.1k to 4.4k) and a <span class="stat">100% increase</span> in appointment bookings. That campaign taught me that great marketing isn't about flashy tactics—it's about understanding people and meeting them where they are.</p>
+            </div>
+
+            <p>But running an agency also revealed the harsh realities of entrepreneurship: cash flow challenges, client churn, and the constant pressure to deliver. When I decided to close Mint gt in 2020, it wasn't a failure—it was a calculated pivot toward deepening my expertise.</p>
+
+            <h2>Chapter 2: Mastering the Art of the Close</h2>
+
+            <p>After my agency chapter, I shifted gears entirely. I wanted to understand the sales side of the equation—not just generating leads, but converting them. That's when I entered the world of remote sales.</p>
+
+            <h3>Credit Glory: The Sales Bootcamp</h3>
+
+            <p>My first role at <strong>Credit Glory</strong> was a baptism by fire. As an inside sales representative, I was tasked with selling credit repair services—a product that requires building trust quickly over the phone.</p>
+
+            <p>The goal was 3 credit repairs per day. I averaged <span class="stat">4-5</span>, exceeding targets by 33% consistently. I also became known for selling hard inquiries—averaging 4 daily versus the team's 2-3. How? I learned to listen more than I spoke, to identify genuine pain points, and to position the solution as a partnership, not a transaction.</p>
+
+            <div class="pullquote">
+                "Sales isn't about convincing someone to buy—it's about helping them see the value they're already seeking."
+            </div>
+
+            <h3>Hinduja Global Solutions: Refining the Process</h3>
+
+            <p>From 2021 to 2023, I joined <strong>Hinduja Global Solutions</strong> as a remote sales representative. This role took my skills to the next level. Working in a high-volume, KPI-driven environment, I consistently ranked in the <span class="stat">top 25%</span> of performers.</p>
+
+            <p>But metrics only tell part of the story. What I'm most proud of is maintaining a <span class="stat">90% customer satisfaction rate</span> over 12 months. In sales, it's easy to chase numbers at the expense of relationships. I proved you could do both—by genuinely caring about outcomes and following up with intention.</p>
+
+            <h2>Chapter 3: The Marketing Comeback</h2>
+
+            <p>In late 2023, I returned to my marketing roots, but this time with a sales mindset. I joined <strong>The Piping Kettle Soup Co.</strong> in London, Ontario, as a freelance marketing specialist.</p>
+
+            <p>The challenge was clear: grow organic traffic and expand their social presence. I dove into SEO campaigns, leveraging tools like <strong>GA4</strong> and <strong>keyword clustering strategies</strong> to identify high-intent search opportunities.</p>
+
+            <p>Within 3 months, we achieved <span class="stat">20% organic traffic growth</span>. But the real breakthrough came from social media. I directed the end-to-end creation of campaigns—from scripting to filming—which resulted in a <span class="stat">5x surge</span> in audience size across Meta platforms.</p>
+
+            <div class="highlight-box">
+                <h4>The Power of Storytelling in Marketing</h4>
+                <p>What made these campaigns work wasn't just technical SEO or clever ad targeting—it was storytelling. We created content that resonated emotionally with soup lovers, home cooks, and people seeking comfort food. Every video, every post, had a human element that algorithms alone couldn't create.</p>
+            </div>
+
+            <h2>Chapter 4: Bringing It All Together</h2>
+
+            <p>Today, at <strong>RevIQ LLC</strong>, I've found the perfect synthesis of my marketing and sales experience. As a Sales Closer and Marketer, I manage the entire funnel—from orchestrating Facebook and Google Ad campaigns to qualifying and closing high-ticket leads.</p>
+
+            <h3>The Numbers That Matter</h3>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Pipeline Management</h4>
+                    <p>Managing 3,000+ leads via GoHighLevel with strict qualification frameworks</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Closing Rate</h4>
+                    <p>Maintaining a consistent 25-30% closing rate on $10k+ offers</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Efficiency Gains</h4>
+                    <p>Filtered out 40% of low-quality prospects, saving 10+ hours weekly</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Ad Performance</h4>
+                    <p>Achieved 15% increase in lead-to-appointment conversion through retargeting</p>
+                </div>
+            </div>
+
+            <p>What sets my approach apart is the integration of <strong>data-driven marketing</strong> with <strong>consultative selling</strong>. I don't just run ads and hope for conversions—I optimize every stage of the funnel, from first click to closed deal.</p>
+
+            <h3>My Core Skill Stack</h3>
+
+            <p>Through years of hands-on experience, I've built expertise across multiple domains:</p>
+
+            <p><strong>Digital Marketing & SEO:</strong> Technical SEO auditing, keyword strategy and clustering, on-page optimization, link-building, Ahrefs, Semrush, Screaming Frog, GA4 analytics</p>
+
+            <p><strong>Paid Advertising:</strong> Facebook Ads, Google Ads, CPA optimization, retargeting strategies, funnel optimization, A/B testing</p>
+
+            <p><strong>Sales & Lead Qualification:</strong> Consultative selling, objection handling, sales cycle management, pipeline management via GoHighLevel and HubSpot</p>
+
+            <p><strong>Analytics & Strategy:</strong> Data analysis, data visualization, customer acquisition, business development, positioning</p>
+
+            <h2>What I've Learned Along the Way</h2>
+
+            <p>If there's one lesson that ties my entire journey together, it's this: <strong>adaptability is everything</strong>. The marketing landscape shifts constantly—new algorithms, new platforms, new consumer behaviors. The same is true in sales.</p>
+
+            <p>But beneath all the tactics and tools, success comes down to understanding people. Whether I'm optimizing a Meta Ads campaign or closing a high-ticket sale, I'm always asking: <em>What does this person need? How can I add value? How can I build trust?</em></p>
+
+            <div class="highlight-box">
+                <h4>Continuous Learning</h4>
+                <p>I recently earned certifications in Ahrefs' Marketing Intelligence Platform, Google Analytics, SEO Essentials with Semrush, and a Digital Marketing Professional Certificate from the Content Marketing Institute. Because in this field, if you're not learning, you're falling behind.</p>
+            </div>
+
+            <h2>Looking Forward</h2>
+
+            <p>As I write this in early 2026, I'm more energized than ever. The convergence of AI, automation, and human-centered marketing is creating unprecedented opportunities. I'm exploring how tools like Claude (yes, the AI writing this blog layout) can enhance—not replace—the strategic thinking that drives real results.</p>
+
+            <p>My goal isn't just to be great at marketing or sales in isolation. It's to master the full customer journey—from awareness to advocacy. Because that's where the real magic happens.</p>
+        </article>
+    </div>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Whether you need a strategic marketing partner, a high-ticket sales closer, or someone who understands the full funnel, I'd love to connect.</p>
+            <a href="mailto:carlosgabrielterraza@gmail.com" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gabriel Terraza. All rights reserved.</p>
+            <p>Based in Guatemala City, Guatemala | <a href="mailto:carlosgabrielterraza@gmail.com">carlosgabrielterraza@gmail.com</a> | <a href="tel:+50232741117">+502 3274-1117</a></p>
+        </div>
+    </footer>
+</body>
+</html>
